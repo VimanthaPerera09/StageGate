@@ -3,7 +3,7 @@
 
 int main(int argc, char const *argv[])
 {
-    getNum num(13);
+    getNum num(14);
     std::cout<<num.getNumVal()<<std::endl;
     return 0;
 }
