@@ -8,5 +8,12 @@ pipeline {
         }
     }
     }
+    post{
+        success{
+            steps{
+               sh(script:"pwd") 
+            }
+        }
+    }
 
 }
