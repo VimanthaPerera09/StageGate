@@ -14,6 +14,9 @@ pipeline {
                sh(script:"pwd") 
             
         }
+        failure{
+            sh(script:"ls -a")
+        }
     }
 
 }
