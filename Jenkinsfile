@@ -10,8 +10,8 @@ pipeline {
     }
     post{
         success{
-            
-               sh(script:"git push https://github.com/VimanthaPerera09/StageGate.git") 
+                sh("git checkout master")
+               sh(script:"git push https://github.com/VimanthaPerera09/StageGate.git master") 
             
         }
         failure{
