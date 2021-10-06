@@ -2,8 +2,8 @@ pipeline {
     agent any
     stages {
         stage("Build") {
-            sh('''make main''')
-            sh('''./main''')
+            sh(script:"make main", returnStatus: true, returnStdout: true)
+            sh(script:"./main", returnStatus: true, returnStdout: true)
         }
 
     }
