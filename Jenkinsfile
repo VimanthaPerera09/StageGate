@@ -2,7 +2,7 @@ pipeline {
     agent any
         environment {
         USERNAME = 'VimanthaPerea09'
-        DB_ENGINE    = 'July@199607v@'
+        PASSWORD = 'July@199607v@'
     }
     stages {
         stage("Build") {
