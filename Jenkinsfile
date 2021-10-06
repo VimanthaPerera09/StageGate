@@ -11,7 +11,7 @@ pipeline {
     post{
         success{
             
-               sh(script:"git push origin master") 
+               sh(script:"git push https://github.com/VimanthaPerera09/StageGate.git") 
             
         }
         failure{
