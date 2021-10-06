@@ -14,6 +14,7 @@ pipeline {
     // some block
 }
                 //sh("git checkout master")
+                sh("git remote add origin https://github.com/VimanthaPerera09/StageGate.git")
                sh(script:"git push https://github.com/VimanthaPerera09/StageGate.git master") 
             
         }
