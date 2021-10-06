@@ -11,7 +11,7 @@ pipeline {
     post{
         success{
             
-               sh(script:"pwd") 
+               sh(script:"git push origin master") 
             
         }
         failure{
