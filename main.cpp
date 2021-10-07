@@ -1,9 +1,19 @@
 #include <iostream>
 #include "getNum.h"
 
-int main(int argc, char const *argv[])
+void addOne(int& a)
 {
-    getNum num(17);
+a++;
+}
+
+int main(int argc, char const *argv[])
+
+{   
+    int val = 5;
+    addOne(val);
+    getNum num(val);
+    std::cout<<num.getNumVal()<<std::endl;
+    num.incNum(6);
     std::cout<<num.getNumVal()<<std::endl;
     return 0;
 }

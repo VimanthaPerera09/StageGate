@@ -2,13 +2,13 @@
 class getNum
 {
 private:
-    int* num;
+    int num;
     
 public:
     getNum(int numx);
     int getNumVal();
     int setNumVal(int number);
-    int incNum(int* p);
+    int incNum(int p);
 };
 
 
