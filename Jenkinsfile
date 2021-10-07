@@ -19,7 +19,7 @@ withCredentials([gitUsernamePassword(credentialsId: 'f53bae07-0ee2-4db9-978e-938
 }
                 //sh('git config --global user.name "VimanthaPerera09"')
                 //sh("git remote add origin https://github.com/VimanthaPerera09/StageGate.git")
-               sh(script:"git push https://github.com/VimanthaPerera09/StageGate.git master") 
+               sh(script:"git push origin master") 
             
         }
         failure{
